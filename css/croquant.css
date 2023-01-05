@@ -1,0 +1,267 @@
+/* 
+
+    COMMUN
+
+*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    scroll-behavior: smooth;
+}
+
+/* mettre les titres (h1) en gras */
+h1 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+}
+
+a:link {
+    color: black;
+}
+
+
+/* retire les puces des listes */
+ul {
+    list-style-type: none;
+}
+
+/* 
+
+    HEADEUR
+
+*/
+
+/* maitrise du logo */
+nav img {
+    width: 245px;
+    margin-left: 15px;
+    margin-bottom: 23px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+}
+
+nav li {
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+nav ul {
+    font-size: 13px;
+}
+
+nav a {
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(#000 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size:0% 1px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+nav a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 1px;
+}
+
+nav a:active {
+    color: #FFECC9;
+    background-image: linear-gradient(#FFECC9);
+}
+
+/* 
+
+    MAIN
+
+*/
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.first {
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+#cote {
+    margin-left: 3%;
+}
+
+#cote ul {
+    list-style-type: square;
+}
+
+#beige {
+    margin-right: 4%;
+    width: 22%;
+    background-color: #FFECC9;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 580px;
+}
+
+#beige img{
+    width: 299px;
+    height: 301px;
+    object-fit: cover;
+    position: relative;
+    right: 12px;
+}
+
+
+#roww {
+    display: flex;
+    flex-direction: row;
+}
+
+#main {
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+#return {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+main::before {
+    content: "";
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: left 291px top;
+    background-size: 90%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: -10px;
+    bottom: 0px;
+    opacity: 0.3;
+} 
+
+main section {
+    position: relative;
+} 
+
+/* 
+
+    FOOTER
+
+*/
+
+footer {
+    background-color: #3E3532;
+    color: white;
+    font-size: 15px;
+    margin-bottom: -8px
+}
+
+footer li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer li a:link {
+    color: white;
+}
+
+footer li a:visited {
+    color: white;
+}
+
+footer li a {
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(rgb(255, 255, 255) 0 0);
+    background-position: 0 100%;
+    /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s;
+    /*change after the size immediately*/
+}
+
+footer li a:hover {
+    background-position: 100% 100%;
+    /*OR bottom right*/
+    background-size: 100% 1px;
+}
+
+footer li a:active {
+    color: #FFECC9;
+}
+
+footer img {
+    object-fit: contain;
+    width: 170px;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+hr {
+    border: none;
+}
+
+#reseaux img {
+    width: 22px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+#follow {
+    display: flex;
+    flex-direction: row;
+}
+
+#none{
+    margin-top: 7%;
+}
+
+.saut {
+    margin-bottom: 10px;
+}
+
+
